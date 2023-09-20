@@ -1,0 +1,155 @@
+/* MODAL */
+.user__container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0003;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms;
+}
+.close{
+    transform: scale(0);
+}
+.user__form{
+    background-color: white;
+    width: 100%;
+    max-width: 350px;
+    padding: 1.7em 1.7em ;
+    border-radius: 0.7em;
+    position: relative;
+    z-index: 1;
+}
+.user__title{
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-weight: 800;
+}
+.user__x{
+    position: absolute;
+    top: 1em;
+    right: 1.8em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.user__x:hover{
+    color: red;
+    transform: scale(1.4);
+}
+.user__email, .user__birthday{
+    font-size: 1.5em;
+    color: rgb(173, 171, 171);
+}
+.user__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 0.5em;
+    gap: 0.3em;
+
+}
+.users__cardnames{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.user__group h1{
+    text-align: center;
+}
+
+.user__label{
+    font-size: 1em;
+
+}
+.user__input{
+    padding: 0.4em;
+    width: 100%;
+}
+.user__button{
+    padding: 1em;
+    width: 100%;
+}
+
+.user__button:hover{
+    color: white;
+    background-color: blue;
+}
+/* TARJETAS DE USUARIOS YA HECHAS */
+h1{
+    padding: 0.5em;
+}
+.user__card{
+    border: 5px solid gray;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 0.5em;
+    width: 30vw;
+    
+}
+.user__button__delete, .user__button__edit
+    {
+    width: 3em;
+    margin: 5px;
+    padding: 3px;
+    background-color: white;
+}
+.user__button__delete:hover, .user__button__edit:hover{
+    background-color: lightgray;
+}
+.user__thrash, .user__edit{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+.create{
+    width: 60%;
+    font-size: 1em;
+    padding: 2em;
+    margin: 3em;   
+}
+.user__delete__card{
+    color: black;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0003;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease;
+}
+.user__delete__content{
+    border: 5px solid gray;
+    border-radius: 1em;
+    background-color: white;
+    padding: 5em;
+    position: relative;
+}
+.user__delete_x{
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.user__delete_x:hover{
+    color: red;
+}
+.closeDelete{
+    transform: scale(0);
+}
+@media (max-width: 768px){
+    .user__card{
+        width: 70vw;
+    }
+    .user__group{
+        margin-top: 0;
+        margin-bottom: 0;
+    } 
+}
