@@ -11,7 +11,7 @@ function App() {
   const [close, setClose] = useState(true)
   const [closeDelete, setCloseDelete] = useState(true)
 
-  const baseUrl = 'https://users-crud.academlo.tech'
+  const baseUrl = 'https://users-crud-back-dev-bhxz.3.us-1.fl0.io'
   const [ users, getUsers, createUsers, deleteUsers, updateUsers ] = useFetch(baseUrl, setClose)
 
   useEffect(() => {
